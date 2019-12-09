@@ -1,5 +1,12 @@
 # jax-rs demo
 
+> JAX-RS  is  a  standard  API proposed by Java to maintain a common architectural pattern independently of the provider´s implementation (libraries). JAX-RS libraries:
+> - Jersey
+> - RESTEasy
+> - Apache CXF
+> - Restlet
+
+
 Demo app creted with jax-rs api, with no dependencies to jax-rs implementations in code. Build with jersey dependency as jax-rs implementation.
 
 Build project:
