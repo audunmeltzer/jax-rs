@@ -17,7 +17,7 @@ public class OrderResource {
 	@GET
 	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response getNotification(@PathParam("id") int id) {
+	public Response get(@PathParam("id") int id) {
 		return Response.ok()
 				.entity(new Order(id, "New item"))
 				.build();
@@ -26,7 +26,7 @@ public class OrderResource {
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response postNotification(Order order) {
+	public Response create(Order order) {
 		return Response.status(201).entity(order).build();
 	}
 }
